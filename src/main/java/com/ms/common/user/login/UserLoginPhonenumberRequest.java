@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserLoginPhonenumberRequest {
+public class UserLoginPhonenumberRequest  {
 
     private String phone_number;
     private String verification_code;
