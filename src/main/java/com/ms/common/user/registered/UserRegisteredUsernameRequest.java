@@ -1,17 +1,17 @@
-package com.ms.common.user.token;
+package com.ms.common.user.registered;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
-// 刷新token
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserTokenRefreshRequest {
-    private String access_token;
+public class UserRegisteredUsernameRequest {
+
+    private String username;
+    private String password;
+
 }

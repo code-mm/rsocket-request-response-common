@@ -1,17 +1,18 @@
-package com.ms.common.user.token;
+package com.ms.common.user.registered;
 
+import com.ms.common.base.BaseResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
-// 刷新token
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserTokenRefreshRequest {
+public class UserRegisteredUsernameResponse  extends BaseResponse {
+
     private String access_token;
+    private String refresh_token;
+
 }

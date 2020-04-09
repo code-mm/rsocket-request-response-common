@@ -1,10 +1,10 @@
 package com.ms.common.user.token;
 
+import com.ms.common.base.BaseResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 
 
 // 刷新token
@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserTokenRefreshRequest {
+public class UserTokenRefreshResponse extends BaseResponse {
     private String access_token;
 }

@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class UserTokenCheckRequest {
 
-
-    private String token;
+    private String access_token;
 
 }

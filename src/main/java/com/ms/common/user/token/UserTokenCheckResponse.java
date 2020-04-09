@@ -1,17 +1,17 @@
 package com.ms.common.user.token;
 
+import com.ms.common.base.BaseResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
-
-// 刷新token
+// 检查token
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserTokenRefreshRequest {
-    private String access_token;
+public class UserTokenCheckResponse  extends BaseResponse {
+    private Boolean expired;
 }
