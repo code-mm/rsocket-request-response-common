@@ -1,6 +1,6 @@
 package com.ms.common.user.token;
 
-import com.ms.common.base.BaseResponse;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserTokenCheckResponse  extends BaseResponse {
+public class UserTokenCheckResponse   {
     private Boolean expired;
 }
