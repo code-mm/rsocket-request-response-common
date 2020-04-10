@@ -2,6 +2,7 @@ package com.ms.common.user.registered;
 
 
 import com.ms.common.base.BaseResponse;
+import com.ms.common.base.IBaseResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserRegisteredUsernameResponse   implements BaseResponse {
+public class UserRegisteredUsernameResponse   extends BaseResponse {
 
     private String access_token;
     private String refresh_token;

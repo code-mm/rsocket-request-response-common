@@ -1,9 +1,4 @@
 package com.ms.common.base;
 
-import lombok.Builder;
-import lombok.Data;
-
-
-public interface BaseResponse {
-
+public abstract class BaseResponse implements IBaseResponse {
 }
