@@ -20,14 +20,16 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 }
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 uploadArchives {
     repositories {
         mavenDeployer {
             repository url: 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
             pom.version = "latest"
-            pom.artifactId = "app-common"
-            pom.groupId = "com.ms"
+            pom.artifactId = "rsocket-request-response-common"
+            pom.groupId = "com.bdlbsc"
         }
     }
 }
